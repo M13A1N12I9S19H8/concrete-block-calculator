@@ -18,7 +18,7 @@ block_type = st.selectbox("Select Block Type", block_types)
 
 length, width, height = get_block_dimensions(block_type)
 
-st.image(f"assets/{block_type.replace(' ', '_').lower()}.png", caption=block_type, width=200)
+st.image(f"{block_type.replace(' ', '_').lower()}.png", caption=block_type, width=200)
 
 st.subheader("Block Dimensions (in mm)")
 length = st.number_input("Length", value=length)
